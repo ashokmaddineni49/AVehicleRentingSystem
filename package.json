@@ -27,6 +27,7 @@
     "@angular/cli": "~16.2.2",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "cypress": "^13.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -34,5 +35,20 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.1.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokmaddineni49/AVehicleRentingSystem.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Ashok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashokmaddineni49/AVehicleRentingSystem/issues"
+  },
+  "homepage": "https://github.com/ashokmaddineni49/AVehicleRentingSystem#readme"
 }

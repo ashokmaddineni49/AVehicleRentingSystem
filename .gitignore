@@ -40,3 +40,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Cypress Node Modules
+Cypress_Home/node_modules
+
+#default test files
+
+Cypress_Home/cypress/e2e/1-getting-started
+
+Cypress_Home/cypress/e2e/2-advanced-examples

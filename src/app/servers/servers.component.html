@@ -1,1 +1,16 @@
-<h2>This is Component2</h2>
+<!-- servers.component.html -->
+
+<h2>{{ 'Ashok' }} this is Server Component</h2>
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <button class="btn btn-primary" [disabled]="!button_new" (click)="randomnumbergenerator()">Click button to get new portid</button>
+      </td>
+      <td>
+        <p>{{ serverid }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

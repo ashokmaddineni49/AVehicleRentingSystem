@@ -1,1 +1,11 @@
-<h3>This is server component running</h3>
+<h2>This is Assignment2</h2>
+<p>2 way event binding</p>
+<label>Enter UserName</label>
+<input type="text" class="form-control" [(ngModel)]="userName">
+<p>{{ userName}}</p>
+<div>
+    <button class="btn btn-primary" (click)="addUserName()"> Add UserName</button>
+    <button class="btn btn-primary" (click)="reset()">Clear input</button>
+</div>
+
+

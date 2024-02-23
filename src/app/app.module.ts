@@ -8,6 +8,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule } from '@angular/forms';
 import { AlertsComponent } from './alerts/alerts.component';
 import { VehGlobalFooterComponent } from './veh-global-footer/veh-global-footer.component';
+import { DyamicFooterContentComponent } from './dyamic-footer-content/dyamic-footer-content.component';
+import { NgModel } from '@angular/forms';
 
 
 
@@ -18,12 +20,13 @@ import { VehGlobalFooterComponent } from './veh-global-footer/veh-global-footer.
     ServersComponent,
     CalculatorComponent,
     AlertsComponent,
-    VehGlobalFooterComponent
+    VehGlobalFooterComponent,
+    DyamicFooterContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

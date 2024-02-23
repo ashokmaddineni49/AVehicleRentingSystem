@@ -1,13 +1,23 @@
 <p>veh-global-footer works!</p>
 <footer class="footer">
     <div class="row">
-      <div class="col-md-3">
-        <a href="#">
-          <img src="assets/bike_png.png" alt="Company Logo" />
-        </a>
-        <p>ARentingSystem.</p>
+
+        
+    <div class="col-md-3">
+        <h5>Social Media</h5>
+            <ul class="list-inline social-links mt-3">
+            <li><a href="/src/app/app.component.html"><img src="assets/bike_png.png" alt="Company Logo"/></a></li>
+            <li><a href="/src/app/app.component.html"><i class="fab fa-facebook-f"><img src="assets/icons8-facebook-48.png" alt="Facebook"/></i></a></li>
+            <li><a href="/src/app/app.component.html"><i class="fab fa-twitter"><img src="assets/icons8-twitter-48.png" alt="Twitter"/></i></a></li>
+            <li><a href="/src/app/app.component.html"><i class="fab fa-instagram"><img src="assets/icons8-instagram-48.png" alt="Instagram"/></i></a></li>
+            <li><a href="/src/app/app.component.html"><i class="fab fa-youtube"></i><img src="assets/icons8-youtube-48.png" alt="YouTube"/></a></li>
+          </ul>
+        </div>
+
+    <div class="col-md-3">
+        <h5>ARentingSystem.</h5>
         <ul class="list-unstyled">
-          <li><a href="#">ARentingSystem</a></li>
+          <li><a href="#" (click)="navigateTo('ARentingSystem')">ARentingSystem</a></li>
           <li><a href="#">Rent a Vehicle</a></li>
           <li><a href="#">Our Collections</a></li>
           <li><a href="#">Premium Collections</a></li>
@@ -15,11 +25,11 @@
         </ul>
       </div>
       <div class="col-md-3">
-        <p>About Us</p>
+        <h5>About Us</h5>
         <ul class="list-unstyled">
           <li><a href="#">Our Company</a></li>
-          <li><a href="#">Carrers</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#"(click)="navigateTo('contact-us')">Contact Us</a></li>
         </ul>
       </div>
   
@@ -29,15 +39,10 @@
         <ul class="list-unstyled">
           <li><a href="#">Help Center</a></li>
           <li><a href="#">FAQs</a></li>
-          <li><a href="#">Live Chat(Coming In.......)</a></li>
-        </ul>
-        <ul class="list-inline social-links mt-3">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#">Live Chat(Coming In)</a></li>
         </ul>
       </div>
-  
+
       <div class="col-md-3">
         <h5>Important Links</h5>
         <ul class="list-unstyled">
@@ -48,17 +53,20 @@
           <li><a href="#">Accessibility Statement</a></li>
         </ul>
       </div>
+      <app-dyamic-footer-content [selectedLink]="selectedLink"></app-dyamic-footer-content>
     </div>
-    <div class="contact">
-        <h5>Important Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Rental Agreement</a></li>
-          <li><a href="#">Insurance Information</a></li>
-          <li><a href="#">Accessibility Statement</a></li>
-        </ul>
-      </div>
 
-  </footer>
+ 
+    <div class="col-md-2">
+        <h5 style="margin-bottom: 0px;margin-left: -50px;">Head Quarters</h5>
+        <div class="col-md-4">
+            <address>
+                <strong><a href="mailto:info@example.com">Ashok Maddineni</a></strong><br>
+                Visit us at:
+                23 Main Street<br>
+                Denton, USA<br>
+            </address>
+        </div>        
+    </div>
+</footer>
   

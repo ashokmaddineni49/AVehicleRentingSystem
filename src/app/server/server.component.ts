@@ -12,5 +12,19 @@ import { Component } from "@angular/core";
   `]
 })
 export class ServerComponent{
+  userName='';
+  addedusername='';
+
+addUserName(){
+  this.addedusername=this.userName;
+  console.log(this.addedusername);
+}
+onUpdateusername(event:Event){
+  this.userName=(<HTMLInputElement>event.target).value;
+console.log(event);
+}
+reset(){
+  this.userName='';
+}
 
 }
